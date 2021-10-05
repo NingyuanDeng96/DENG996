@@ -20,7 +20,7 @@
     float: left;
     width: 50%;
     height: 800px;
-    background-color:darkkhaki;
+    background-color:rgb(163, 163, 163);
     padding: 20px;
   }
   
@@ -28,21 +28,13 @@
     float: right;
     padding: 20px;
     width: 50%;
-    background-color:yellowgreen;
+    background-color:rgb(255, 255, 255);
     height: 800px;
   }
   
-  /* Clear floats after the columns */
-  section::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Style the footer */
   .footer {
     background-color: #777;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     color: white;
   }
