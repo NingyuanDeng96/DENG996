@@ -12,7 +12,6 @@
     color: white;
   }
   
-  /* Create two columns/boxes that floats next to each other */
   nav {
     float: left;
     width: 30%;
@@ -21,14 +20,8 @@
     padding: 20px;
   }
   
-  /* Style the list inside the menu */
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
   article {
-    float: left;
+    float: right;
     padding: 20px;
     width: 70%;
     background-color: #f1f1f1;
