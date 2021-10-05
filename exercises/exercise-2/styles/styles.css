@@ -20,7 +20,7 @@
     float: left;
     width: 50%;
     height: 800px;
-    background: #ccc;
+    background-color:darkkhaki;
     padding: 20px;
   }
   
@@ -28,8 +28,8 @@
     float: right;
     padding: 20px;
     width: 50%;
-    background-color: #f1f1f1;
-    height: 300px;
+    background-color:yellowgreen;
+    height: 800px;
   }
   
   /* Clear floats after the columns */
