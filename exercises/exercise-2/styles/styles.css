@@ -19,7 +19,7 @@
   .left {
     float: left;
     width: 50%;
-    height: 850px;
+    height: 950px;
     background-color:rgb(163, 163, 163);
     padding: 20px;
   }
@@ -29,7 +29,7 @@
     padding: 20px;
     width: 50%;
     background-color:rgb(255, 255, 255);
-    height: 850px;
+    height: 950px;
   }
   
   .footer {
