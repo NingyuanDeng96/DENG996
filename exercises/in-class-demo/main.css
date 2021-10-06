@@ -1,0 +1,18 @@
+body {
+    background-color: tomato;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+.item{
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+    font-size: 42px;
+}
