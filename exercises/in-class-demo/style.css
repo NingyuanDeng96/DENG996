@@ -49,3 +49,12 @@ section {
     float: left;
     height: 100%;
 }
+
+.box {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    top: 100px;
+    right: 100px;
+    background-color: steelblue;
+}
