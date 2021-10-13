@@ -1,18 +1,41 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html, body{
+    height:100%;
+}
+
 body {
     background-color: tomato;
 }
 
 .container {
-    display: flex;
+    display:flex;
+    height: 100%;
     flex-direction: column;
     justify-content:center;
     align-items:center;
 }
 
 .item{
+    flex-grow: 1;
     margin: 5px;
     width: 100px;
     height: 100px;
     background-color: violet;
     font-size: 42px;
+
+}
+
+.item:hover{
+    color:greenyellow;
+}
+
+.item:nth-child(2){
+    order: 1;
+    flex-grow:3;
+    background-color: yellowgreen;
+    align-self: flex-end;
 }
