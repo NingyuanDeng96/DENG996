@@ -1,0 +1,189 @@
+body{
+	width:100%;
+	margin:auto;
+	background-image: url("../assets/blue.gif");
+	font-family:Roboto Mono;
+}
+
+
+/*box up top where my name goes*/
+header{
+	margin:auto;
+	margin-top:1em;
+	margin-bottom:1em;
+	width:480px;
+	background-color:rgba(255,100,255,0.75);
+	box-shadow: -7px 7px 0px 0px rgba(0,0,0,1);
+	animation-name: border1;
+	animation-duration:15s;
+	animation-iteration-count: infinite;
+}
+
+	header h1{
+			text-align: center;
+			font-style: bold;
+			color:(0,0,0);
+			margin-bottom:0;
+		}
+		header h1:hover{
+				animation-name:textHover1;
+				animation-duration:3s;
+				animation-iteration-count:infinite;
+			}
+	header h2{
+		font-size:1em;
+		text-align:center;
+	}
+
+/*navigation menu*/
+nav{
+	margin-top:2em;
+	font-family:Roboto Mono;
+	margin-bottom:2em;
+}
+nav li{
+	list-style:none;
+	display: inline-block;
+	font-size:5;
+}
+nav ul{
+	text-align: center;
+	padding-left:0;
+}
+
+
+/*info page*/
+
+section{
+	font-family:Roboto Mono;
+	margin:auto;
+	margin-bottom:2em;
+    width:640px;
+    background-color:rgba(255,255,255,0.75);
+	box-shadow: -7px 7px 0px 0px rgba(0,0,0,1);
+	animation-name: border1;
+	animation-duration:15s;
+	animation-iteration-count: infinite;
+}
+	
+	
+	section#about p{
+		font-size:1em;
+		text-align:center;
+		margin:2em;
+		padding:0em;
+	}
+	section h2{
+		font-size: 1.5em;
+		text-align:center;
+		margin:1em;
+		margin-left:1em;
+	}
+	section h3{
+		font-size:1em;
+		margin:0;
+		padding-bottom:0;
+	}
+	section p{
+		font-size:0.75em;
+		margin:0;
+		padding:1em;
+		padding-top:0;
+	}
+	section li{
+		list-style:circle;
+		margin:0;
+	}
+		section ul.sublist{
+			list-style:square;
+			padding-left:1em;
+		    padding-bottom:1em;
+		}
+		section ul.sublist li{
+			font-size:0.75em;
+		    list-style:square;
+		    padding:0;
+		}
+
+
+/*FOOTER*/
+
+footer{
+	margin:auto;
+    width:640px;
+	background-color:rgba(255,100,255,0.75);
+	box-shadow: -7px 7px 0px 0px rgba(0,0,0,1);
+	animation-name: border1;
+	animation-duration:15s;
+	animation-iteration-count: infinite;
+}
+
+footer{
+	margin-top:1em;
+	margin-bottom:3em;
+	
+}
+footer p{
+	text-align:center;
+}
+
+
+/* LINK & HOVER */
+
+a:link{
+	color:rgba(0,0,255,75);
+	text-decoration:none;
+}
+a:hover{
+	animation-name:textHover1;
+	animation-duration:5s;
+	animation-iteration-count:infinite;
+}
+section:hover{
+	background-color:rgba(255,255,255,1)
+}
+
+header:hover{
+	background-color:rgba(255,0,255,1)
+}
+footer:hover{
+	background-color:rgba(255,0,255,1)
+}
+
+/* === BACKGROUND VIDEO === */
+
+video#background{ 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size:cover;
+    animation-name:videofade;
+	animation-duration:1s;
+	animation-iteration-count:1;
+}
+
+/* === ANIMATION === */
+@keyframes border1{
+	0%	 {border-style:solid; border-color:rgba(255,0,0,1);}
+	33%  {border-style:solid; border-color:rgba(0,255,0,1);}
+	66%  {border-style:solid; border-color:rgba(0,0,255,1);}
+	100% {border-style:solid; border-color:rgba(255,0,0,1);}
+}
+@keyframes textHover1{
+	0%	 {color:rgba(255,0,0,1);}
+	33%  {color:rgba(0,255,0,1);}
+	66%  {color:rgba(0,0,255,1);}
+	100% {color:rgba(255,0,0,1);}
+}
+
+@keyframes videofade{
+	0%   {opacity:0;}
+	100% {opacity:1;}
+}
+
