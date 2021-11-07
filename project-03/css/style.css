@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body{
 	width:100%;
 	margin:auto;
@@ -6,7 +13,6 @@ body{
 }
 
 
-/*box up top where my name goes*/
 header{
 	margin:auto;
 	margin-top:1em;
@@ -35,21 +41,13 @@ header{
 		text-align:center;
 	}
 
-/*navigation menu*/
 nav{
 	margin-top:2em;
 	font-family:Roboto Mono;
 	margin-bottom:2em;
-}
-nav li{
-	list-style:none;
-	display: inline-block;
-	font-size:5;
-}
-nav ul{
 	text-align: center;
-	padding-left:0;
 }
+
 
 
 /*info page*/
@@ -116,6 +114,7 @@ footer{
 	animation-name: border1;
 	animation-duration:15s;
 	animation-iteration-count: infinite;
+	top: 10px;
 }
 
 footer{
@@ -128,45 +127,6 @@ footer p{
 }
 
 
-/* LINK & HOVER */
-
-a:link{
-	color:rgba(0,0,255,75);
-	text-decoration:none;
-}
-a:hover{
-	animation-name:textHover1;
-	animation-duration:5s;
-	animation-iteration-count:infinite;
-}
-section:hover{
-	background-color:rgba(255,255,255,1)
-}
-
-header:hover{
-	background-color:rgba(255,0,255,1)
-}
-footer:hover{
-	background-color:rgba(255,0,255,1)
-}
-
-/* === BACKGROUND VIDEO === */
-
-video#background{ 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
-    background-size:cover;
-    animation-name:videofade;
-	animation-duration:1s;
-	animation-iteration-count:1;
-}
 
 /* === ANIMATION === */
 @keyframes border1{
@@ -187,42 +147,45 @@ video#background{
 	100% {opacity:1;}
 }
 
-/* wide screen */
-@media all and (min-width: 500px)
-{
-	#content
-	{
-		display: flex;
-		justify-content: center;
-	}
-
-	ul
-	{
-		max-width: 300px;
-		display: inline-block;
-		vertical-align: top;
-	}
+container {
+    display:flex;
+    height: 100%;
+    flex-direction:row-reverse;
+    justify-content:center;
+    align-items:center;
 }
 
-/* small screen */
-@media all and (max-width: 500px)
-{
-	ul
-	{
-		width: 100%;
-		display: inline-block;
-		margin: auto;
-	}
+container2 {
+    display:flex;
+    height: 100%;
+    flex-direction:row-reverse;
+    justify-content:center;
+    align-items:center;
 }
+
+container3 {
+    display:flex;
+    height: 100%;
+    flex-direction:row-reverse;
+    justify-content:center;
+    align-items:center;
+}
+
+item{
+    flex-grow: 1;
+    margin: 10px;
+    width: 100px;
+    height: 175px;
+    font-size: 42px;
+}
+
+
+
+
 
 img,
 video
 {
 	width: 100%;
-	display: block;
-}
 
-li
-{
-	list-style-type: none;
 }
