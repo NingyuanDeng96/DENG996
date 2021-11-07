@@ -187,3 +187,42 @@ video#background{
 	100% {opacity:1;}
 }
 
+/* wide screen */
+@media all and (min-width: 500px)
+{
+	#content
+	{
+		display: flex;
+		justify-content: center;
+	}
+
+	ul
+	{
+		max-width: 300px;
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
+/* small screen */
+@media all and (max-width: 500px)
+{
+	ul
+	{
+		width: 100%;
+		display: inline-block;
+		margin: auto;
+	}
+}
+
+img,
+video
+{
+	width: 100%;
+	display: block;
+}
+
+li
+{
+	list-style-type: none;
+}
