@@ -52,61 +52,6 @@ a{
 	text-decoration: none;
 }
 
-/*info page*/
-
-section{
-	font-family:Roboto Mono;
-	margin:auto;
-	margin-bottom:2em;
-    width:640px;
-    background-color:rgba(255,255,255,0.75);
-	box-shadow: -7px 7px 0px 0px rgba(0,0,0,1);
-	animation-name: border1;
-	animation-duration:15s;
-	animation-iteration-count: infinite;
-}
-	
-	
-	section#about p{
-		font-size:1em;
-		text-align:center;
-		margin:2em;
-		padding:0em;
-	}
-	section h2{
-		font-size: 1.5em;
-		text-align:center;
-		margin:1em;
-		margin-left:1em;
-	}
-	section h3{
-		font-size:1em;
-		margin:0;
-		padding-bottom:0;
-	}
-	section p{
-		font-size:0.75em;
-		margin:0;
-		padding:1em;
-		padding-top:0;
-	}
-	section li{
-		list-style:circle;
-		margin:0;
-	}
-		section ul.sublist{
-			list-style:square;
-			padding-left:1em;
-		    padding-bottom:1em;
-		}
-		section ul.sublist li{
-			font-size:0.75em;
-		    list-style:square;
-		    padding:0;
-		}
-
-
-/*FOOTER*/
 
 footer{
 	margin:auto;
@@ -174,6 +119,14 @@ container3 {
 }
 
 item{
+    flex-grow: 1;
+    margin: 10px;
+    width: 100px;
+    height: 175px;
+    font-size: 42px;
+}
+
+item2{
     flex-grow: 1;
     margin: 10px;
     width: 100px;
