@@ -126,7 +126,7 @@ item{
     font-size: 42px;
 }
 
-img,
+
 video
 {
 	width: 100%;
@@ -134,9 +134,12 @@ video
 }
 
 
-.pic{
-	text-align: center;
-	height: 30px;
+img{
+	max-width: 20%;
+	height: auto;
 }
 
+#center {  
+	text-align: center;  
+}  
 
