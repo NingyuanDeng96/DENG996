@@ -1,7 +1,7 @@
 //console.log('it works')
 
-let nouns = ['aaa','bbb','ccc'];
-let verbs = ['fei','make','love']
+let nouns = ['apple','banana','orange'];
+let verbs = ['hate','make','love']
 let adjectives = ['nice','perfect','death']
 
 //let item = arrayName [Math.floor(Math.random()*arrayName.length)];
